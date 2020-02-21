@@ -16,6 +16,7 @@ const usuarioSchema = new Schema({
     password: { type: String, required: [true, 'La contraseña es necearia'] },
     img: { type: String, required: false },
     role: { type: String, required: true, default: 'USER_ROLE', enum: rolesValidos },
+    google: { type: Boolean, default: false }
 });
 
 
